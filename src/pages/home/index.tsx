@@ -10,13 +10,18 @@ import { Link as RouterLink } from "react-router-dom";
 const Home = () => {
   const [paginationCount, setPaginationCount] = useState(0);
   const [page, setPage] = useState(1);
-  const { pokemonListState, fetchPokemonList, fetchPokemonDetail } =
-    useAppState();
+  const {
+    pokemonListState,
+    fetchPokemonList,
+    fetchPokemonDetail,
+    cleanPokemonDetail,
+  } = useAppState();
 
   const perPage = 50;
 
   useEffect(() => {
-    fetchPokemonList(null, null);
+    fetchPokemonList( null, null );
+    cleanPokemonDetail();
   }, []);
 
   useEffect(() => {
