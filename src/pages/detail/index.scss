@@ -1,0 +1,32 @@
+.detail-content {
+  margin: auto;
+  width: 200px;
+
+  .image {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    &-text{
+      height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+
+  .text {
+    margin: 10px;
+    &-evolution {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .arrow-icon {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+}
